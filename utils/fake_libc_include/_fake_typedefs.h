@@ -1,13 +1,13 @@
 #ifndef _FAKE_TYPEDEFS_H
 #define _FAKE_TYPEDEFS_H
 
-typedef int size_t;
+typedef unsigned int size_t;
 typedef int __builtin_va_list;
 typedef int __gnuc_va_list;
-typedef int __int8_t;
-typedef int __uint8_t;
-typedef int __int16_t;
-typedef int __uint16_t;
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short __int16_t;
+typedef unsigned short __uint16_t;
 typedef int __int_least16_t;
 typedef int __uint_least16_t;
 typedef int __int32_t;
@@ -34,12 +34,12 @@ typedef int wchar_t;
 typedef int __off_t;
 typedef int __pid_t;
 typedef int __loff_t;
-typedef int u_char;
-typedef int u_short;
-typedef int u_int;
-typedef int u_long;
-typedef int ushort;
-typedef int uint;
+typedef unsigned char u_char;
+typedef unsigned short u_short;
+typedef unsigned int u_int;
+typedef unsigned long u_long;
+typedef unsigned short ushort;
+typedef unsigned int uint;
 typedef int clock_t;
 typedef int time_t;
 typedef int daddr_t;
@@ -93,14 +93,14 @@ typedef int pthread_barrierattr_t;
 typedef int jmp_buf;
 
 /* C99 integer types */
-typedef int int8_t;
-typedef int uint8_t;
-typedef int int16_t;
-typedef int uint16_t;
-typedef int int32_t;
-typedef int uint32_t;
-typedef int int64_t;
-typedef int uint64_t;
+typedef signed char int8_t;
+typedef unsigned char uint8_t;
+typedef signed short int16_t;
+typedef unsigned short uint16_t;
+typedef signed int int32_t;
+typedef unsigned int uint32_t;
+typedef signed long long int int64_t;
+typedef unsigned long long int uint64_t;
 
 /* C99 stdbool.h bool type. _Bool is built-in in C99 */
 typedef _Bool bool;
